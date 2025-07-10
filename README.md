@@ -76,7 +76,7 @@ The full list of parameters and their descriptions are given below:
 | output  | The output name| MCMC_res.npy |
 
 There are one additional parameter used when implementing MCMC in parallel:
-| Params      | Description | Default value |
+| Parameter      | Description | Default |
 | ----------- | ----------- | ----------- |
 | ncpus  | The number of cpus (workers) to run when paralleling| 40 |
 
@@ -96,7 +96,7 @@ If you want to run with multiple cpus, use
 python S_AB_parallel.py --file data/mBC_cell_ls.txt --chr 1 --MH_file mBC_MCMC.npy --input_version v2
 ```
 Besides the shared parameters with the function MCMC in step 1, the additional parameters and their descriptions are given below:
-| Params      | Description | Default value |
+| Parameter      | Description | Default |
 | ----------- | ----------- | ----------- |
 | MH_file  | The MCMC results in step 1, used as the input for Ncut. | Required |
 | cpg_file  | The CpG data used for alignment | reference/mm10.CpG.100000.txt |
